@@ -3,8 +3,7 @@
   }
 
 body {
-    background-image: url(http://www.designbolts.com/wp-content/uploads/2013/02/Cubes-Grey-Seamless-Pattern-For-Website-Background.jpg);
-    background-color: whitesmoke;
+    background-color: #dfdce3;
     margin: 0px;
 }
 
@@ -17,11 +16,17 @@ body {
     font-size: 50px;
 }
 
+.main-header-text {
+    font-family: 'Staatliches', cursive;
+    color: black;
+}
+
 .left {
     width: 75%;
     color: black;
     padding: 1em;
     float: left;
+    opacity: 0.99;
 }
 
 .right {
@@ -48,8 +53,7 @@ body {
 .card {
     border: 1px;
     border-radius: 4.5px;
-    background-color: white;
-    box-shadow: 1px 1px 3px gray;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
@@ -90,14 +94,30 @@ a:visited {
 }
 
 .link-icon {
-    padding: 3px;
+    padding: 3px 10px 3px;
 }
 
-@media screen and (max-width: 800px) {
+.email-link {
+    padding: 3px 10px 3px;
+}
+
+@media screen and (max-width: 520px) {
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .header {
+        font: 24px;
+        visibility: none;
+    }
     .left, .right { 
       width: 100%;
     }
    .row {
        flex-direction: column-reverse;
+       max-width: 100%;
    }
 }
