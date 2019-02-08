@@ -5,5 +5,5 @@ server.use(express.static('public', {
     extensions: ['html', 'htm']
 }))
 
-const {PORT = 5000} = process.env
+const {PORT = 80} = process.env
 server.listen(PORT, () => console.log("Listening at http://localhost:%s", PORT))
