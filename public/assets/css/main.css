@@ -10,10 +10,13 @@ body {
 .header {
     width: 100%;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     padding: 0px;
     border-radius: 0px 0px 4.5px 4.5px;
-    height: 100px;
     font-size: 50px;
+    
 }
 
 .main-header-text {
@@ -27,6 +30,7 @@ body {
     padding: 1em;
     float: left;
     opacity: 0.99;
+    
 }
 
 .right {
@@ -60,6 +64,9 @@ body {
     font-family: 'Roboto', sans-serif;
     width: auto;
     height: auto;
+    word-wrap: break-word;
+    hyphens: auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .about {
@@ -90,6 +97,12 @@ a:visited {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+
 
 }
 
@@ -99,6 +112,7 @@ a:visited {
 
 .email-link {
     padding: 3px 10px 3px;
+    
 }
 
 @media screen and (max-width: 520px) {
@@ -111,6 +125,8 @@ a:visited {
 
     .header {
         font: 24px;
+        height: 200px;
+        width: 100%;
         visibility: none;
     }
     .left, .right { 
